@@ -1,14 +1,14 @@
 import java.util.Scanner;
 public class SiakadWhile05 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Masukkan jumlah mahasiswa: ");
-        int jml = scanner.nextInt();
+        int jml = sc.nextInt();
         int i = 0;
 
         while (i < jml) {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
-            int nilai = scanner.nextInt();
+            int nilai = sc.nextInt();
             if (nilai < 0 || nilai > 100) {
                 System.out.println("Nilai tidak valid. Silakan masukkan nilai antara 0 hingga 100.");
                 continue; 
@@ -32,6 +32,7 @@ public class SiakadWhile05 {
             }
             i++;
         }
+        sc.close();
     }
 }
 

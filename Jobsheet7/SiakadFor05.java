@@ -1,14 +1,14 @@
 import java.util.Scanner;
 public class SiakadFor05 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
     
         double nilai, tertinggi = 0, terendah = 100;
         int totalLulus = 0, totalTidakLulus = 0;
 
         for (int i = 1; i <= 10; i++) {
             System.out.print("Masukan nilai mahasiswa ke-" + i + ": ");
-            nilai = scanner.nextDouble();
+            nilai = sc.nextDouble();
             if (nilai > tertinggi) {
                 tertinggi = nilai;
             }
@@ -25,6 +25,7 @@ public class SiakadFor05 {
         System.out.println("Nilai terendah: " + terendah);
         System.out.println("Jumlah mahasiswa yang lulus: " + totalLulus);
         System.out.println("Jumlah mahasiswa yang tidak lulus: " + totalTidakLulus);
-        scanner.close();
+
+        sc.close();
     }
 }
